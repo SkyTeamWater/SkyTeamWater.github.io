@@ -1,0 +1,30 @@
+<html><head><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/index.css"/>
+<script src="https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/method.min.js"></script></head>
+<body><div class="vditor-reset" id="preview"><h1 id="Sig-web-server">Sig web server</h1>
+<p><a href="https://github.com/SkyTeamWater/simple-golang-web-server">Sig web server(simple golang web server)</a>, is a tiny http server by golang.</p>
+<p>I'm a student and this is my first project.</p>
+<hr />
+<h2 id="How-to-use">How to use</h2>
+<p>Download code or application at github release page.</p>
+<p>then</p>
+<pre><code class="language-bash">./sig PORT
+</code></pre>
+<p>There you go!</p>
+</div>
+<script>
+    const previewElement = document.getElementById('preview')
+    Vditor.setContentTheme('light', 'https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/css/content-theme');
+    Vditor.codeRender(previewElement, 'zh_CN');
+    Vditor.highlightRender({"enable":true,"lineNumber":false,"style":"github"}, previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.mathRender(previewElement, {
+        cdn: 'https://cdn.jsdelivr.net/npm/vditor@3.6.0',
+        math: {"engine":"KaTeX","inlineDigit":false,"macros":{}},
+    });
+    Vditor.mermaidRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.flowchartRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.graphvizRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.chartRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.mindmapRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.abcRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.mediaRender(previewElement);
+</script></body></html>
