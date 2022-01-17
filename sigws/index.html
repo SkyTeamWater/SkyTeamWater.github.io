@@ -1,41 +1,41 @@
-<html><head><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/index.css"/>
-<script src="https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/method.min.js"></script></head>
-<body><div class="vditor-reset" id="preview"><h2 id="sigws-">sigws</h2>
-<p><img src="https://img.shields.io/github/license/SkyTeamWater/sigws" alt="GitHub" /><br />
-<img src="https://img.shields.io/github/repo-size/SkyTeamWater/sigws" alt="GitHub repo size" /><br />
-<img src="https://img.shields.io/github/workflow/status/SkyTeamWater/sigws/Go/master" alt="GitHub Workflow Status (branch)" /></p>
+<h2>sigws</h2>
+
+<p><img src="https://img.shields.io/github/license/sigws/sigws" alt="GitHub" title="" />
+<img src="https://img.shields.io/github/repo-size/sigws/sigws" alt="GitHub repo size" title="" />
+<img src="https://img.shields.io/github/workflow/status/sigws/sigws/Build/master" alt="GitHub Workflow Status (branch)" title="" /></p>
+
 <p>This project comprises the core Golang HTTP abstractions</p>
-<h3 id="Installing">Installing</h3>
-<p>Note that currently this project has been tested on Windows 10/11 and Ubuntu 20.04.* although it likely works on many<br />
+
+<h3>Installing</h3>
+
+<p>Note that currently this project has been tested on Windows 10/11 and Ubuntu 20.04.* although it likely works on many
 other platforms.</p>
-<p>But we cross compile Darwin in amd64, Linux Windows FreeBSD in arm and amd64.</p>
-<p>Have a try, turn right to <a href="https://github.com/SkyTeamWater/sigws/releases">Release Page</a>.</p>
-<h3 id="Build">Build</h3>
-<p>See Build/ folder. Run shells that match your platform.</p>
-<h3 id="Download">Download</h3>
-<p>GO to Release Page and download the software that fits your platform.</p>
+
+<p>But we cross compile Darwin Linux Windows FreeBSD in arm64 and amd64.</p>
+
+<p>Have a try, turn right to <a href="https://github.com/sigws/sigws/releases">Release Page</a> or <a href="https://github.com/sigws/sigws/actions">Github Actions</a>.</p>
+
+<h3>Build</h3>
+
+<p><code>go build</code></p>
+
+<h3>Download</h3>
+
+<p>Go to Release Page or Github Actions and download the software that fits your platform.</p>
+
 <p>Or you can use dll inside your own project, but you should sign my name and my project link on your project.</p>
-<h3 id="How-To-Use">How To Use</h3>
-<p>Just put you web file into <code>/www</code>, then <code>sigwebserver_windows_amd64.exe (PORT)</code> or <code>sigwebserver_linux_amd64 (PORT)</code><br />
-or <code>sigwebserver_darwin_amd64 (PORT)</code>. Just like <code>sigwebserver_windows_amd64.exe 80</code>. Or even don't type PORT, program<br />
-will use default port:80.</p>
-<h3 id="License">License</h3>
-<p>See <a href="https://github.com/SkyTeamWater/sigws/blob/master/LICENSE">MIT LICENSE</a>.</p>
-</div>
-<script>
-    const previewElement = document.getElementById('preview')
-    Vditor.setContentTheme('light', 'https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/css/content-theme');
-    Vditor.codeRender(previewElement, 'zh_CN');
-    Vditor.highlightRender({"enable":true,"lineNumber":false,"style":"github"}, previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
-    Vditor.mathRender(previewElement, {
-        cdn: 'https://cdn.jsdelivr.net/npm/vditor@3.6.0',
-        math: {"engine":"KaTeX","inlineDigit":false,"macros":{}},
-    });
-    Vditor.mermaidRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
-    Vditor.flowchartRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
-    Vditor.graphvizRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
-    Vditor.chartRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
-    Vditor.mindmapRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
-    Vditor.abcRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
-    Vditor.mediaRender(previewElement);
-</script></body></html>
+
+<h3>How To Use</h3>
+
+<p>Just put you web file into <code>/www</code>, then run the program with port.
+For example <code>sigws_linux_amd64 8080</code>.</p>
+
+<h3>License</h3>
+
+<p>See <a href="LICENSE">MIT LICENSE</a>.</p>
+
+<h3>Thanks</h3>
+
+<p>Thank you so much JetBrains.This is a great encouragement to me</p>
+
+<p><a href="https://jb.gg/OpenSource"><img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg?_ga=2.81844693.2113755496.1633249320-1809777644.1633249320&amp;_gl=1*brwjbt*_ga*MTgwOTc3NzY0NC4xNjMzMjQ5MzIw*_ga_V0XZL7QHEB*MTYzMzM1MzI4NS43LjEuMTYzMzM1MzI4Ni4w" alt="JetBrains" title="" /></a></p>
